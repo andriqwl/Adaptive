@@ -1,0 +1,5 @@
+.navigation{
+    flex-grow: 3;
+    align-content: center;
+    @extend %block;
+}

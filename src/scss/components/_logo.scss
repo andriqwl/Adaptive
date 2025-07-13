@@ -1,0 +1,8 @@
+.logo{
+    background-color: transparent; 
+    color: rgb(218, 93, 93);
+    font-weight: 700;
+    flex-grow: 1;
+    align-content: center;
+    @extend %block;
+}

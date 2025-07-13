@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  gap: 15px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1500px;
+  justify-content: center;
+}
+
+.list__item, .hero__aside, .hero__main, .navigation, .logo {
+  background-color: rgb(218, 93, 93);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__wrap {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+
+.header__image {
+  display: none;
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px 15px;
+  align-content: center;
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__wrap {
+    text-align: start;
+  }
+  .header__image {
+    display: inline-block;
+  }
+}
+.logo {
+  background-color: transparent;
+  color: rgb(218, 93, 93);
+  font-weight: 700;
+  flex-grow: 1;
+  align-content: center;
+}
+
+.navigation {
+  flex-grow: 3;
+  align-content: center;
+}
+
+.hero {
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__main {
+  align-content: center;
+  flex-grow: 3;
+  min-height: 300px;
+}
+
+.hero__aside {
+  align-content: center;
+  flex-grow: 1;
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.list__item {
+  flex: 0 0 calc(33.333% - 10px);
+  min-height: 100px;
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  .list__item {
+    flex: 0 0 calc(50% - 8px);
+  }
+}
+@media (max-width: 480px) {
+  .list__item {
+    flex: 0 0 calc(100% - 1px);
+  }
+}

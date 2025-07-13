@@ -1,0 +1,23 @@
+.hero{
+    gap: 15px;
+    display: flex;
+    justify-content: center
+}
+.hero__main{
+    align-content: center;
+    flex-grow: 3;
+    min-height: 300px;
+    @extend %block;
+}
+.hero__aside{
+    align-content: center;
+    flex-grow: 1;
+    min-height: 300px;
+    @extend %block;
+}
+
+@media (max-width:768px){
+    .hero{
+        flex-direction: column;
+    }
+}
